@@ -1,6 +1,7 @@
 # install nodejs and npm
-apt install -y nodejs
-apt install -y npm
+curl -sL https://deb.nodesource.com/setup_18.x -o /tmp/nodesource_setup.sh
+bash /tmp/nodesource_setup.sh
+apt-get install nodejs -y
 # install pm2
 npm install pm2 -g
 # install ollama
