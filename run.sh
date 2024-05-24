@@ -7,8 +7,9 @@ npm install pm2 -g
 # install ollama
 wget https://ollama.com/install.sh
 sh install.sh
-wget https://huggingface.co/TheBloke/Silicon-Maid-7B-GGUF/resolve/main/silicon-maid-7b.Q8_0.gguf
-wget https://green-mad-elk-149.mypinata.cloud/ipfs/QmavQtTprdaogQMVpYz7735Ve5zumjANpc6JgXHgnRacFm/siliconmaid-7b-seraphina/Modelfile
+# wget https://huggingface.co/MaziyarPanahi/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q8_0.gguf
+# echo "FROM ./Meta-Llama-3-8B-Instruct.Q8_0.gguf" > Modelfile
 # start pm2
 pm2 start main.py
-ollama create siliconmaid -f Modelfile
+ollama run moondream
+# ollama create llama3 -f Modelfile
