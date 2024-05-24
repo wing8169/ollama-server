@@ -7,8 +7,9 @@ npm install pm2 -g
 # install ollama
 wget https://ollama.com/install.sh
 sh install.sh
-wget https://huggingface.co/MaziyarPanahi/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q8_0.gguf
-echo "FROM ./Meta-Llama-3-8B-Instruct.Q8_0.gguf" > Modelfile
+# wget https://huggingface.co/MaziyarPanahi/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q8_0.gguf
+# echo "FROM ./Meta-Llama-3-8B-Instruct.Q8_0.gguf" > Modelfile
 # start pm2
 pm2 start main.py
-ollama create llama3 -f Modelfile
+ollama run moondream
+# ollama create llama3 -f Modelfile
